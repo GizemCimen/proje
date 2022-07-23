@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Poppins:wght@400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+/* sayfa ortalama */
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.header{/* ögenin görüntü alanı yüksekliğine esitleme */
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar{
+    display: flex;/* logo ve yazıları yan yana getirme */
+    align-items: center;/* dikeyde hizala */
+    justify-content: space-around;/* eşit aralıklarla böl */
+    padding: 20px;
+}
+
+.navbar .logo img{
+    width: 100px;
+
+}
+nav ul li{
+    display: inline-block; /* yazılar yan yana */
+    margin-right: 25px;/* yazılar arası boşluk */
+}
+
+nav li a{
+    color: #42220c;
+    font-weight: 600;
+}
+
+nav{
+    margin-right: 35%;
+}
+
+.icon i{
+    font-size: 25px;
+}
+/* ROW */
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.col-2{
+    flex-basis: 50%;
+}
+
+.container .box{/* video küçült */
+    width: 500px;
+    height: 500px;
+    margin-top: -60px;
+    position: relative;
+}
+.container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;/* reismde en boy oranının korunmasına yarar */
+    position: absolute;
+    top: 0;
+    left: 0;
+    mix-blend-mode: screen;    /* resim ile video harmanlandı */
+}
+.container .box video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.col-2 h1{
+    font-size: 3rem;
+    color: #50260a;
+}
+
+.col-2 span{
+    font-size: 6rem;
+    margin-left: 80px!important;
+    line-height: 60px;
+    margin: 20px 0;
+}
+
+.col-2 p{
+    margin: 20px 0;
+    font-weight: 400;
+}
+
+.btn{
+    display: inline-block;
+    color:#fff;
+    background-color: #b95c1e;
+    padding: 9px 30px;/* kenarları boyutlandırma*/
+    border-radius: 30px;/* kenar oval */
+    margin-top: 5px;
+    margin-left: 70%; 
+}
